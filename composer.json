@@ -1,0 +1,37 @@
+{
+    "require": {
+        "johnpbloch/wordpress": "^6.4",
+        "wpackagist-plugin/elementor": "^3.17"
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cd wordpress/wp-content/plugins && ln -s ../../../value-prop value-prop"
+        ],
+        "dev": [
+            "cd wordpress && php -S localhost:8080"
+        ]
+    },
+    "repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+			]
+		}
+	],
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    }
+}
