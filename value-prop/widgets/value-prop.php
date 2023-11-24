@@ -26,11 +26,11 @@ class Value_Prop_Widget extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( "What's my Value Prop?", 'value-prop' );
+		return esc_html__( "Value Prop?", 'value-prop' );
 	}
 
 	public function get_icon() {
-		return 'eicon-code';
+		return 'eicon-notes';
 	}
 
 	public function get_categories() {

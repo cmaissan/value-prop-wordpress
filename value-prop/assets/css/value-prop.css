@@ -4,15 +4,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--e-global-typography-text-font-family), sans-serif;
+    font-size: var(--e-global-typography-text-font-size);
+    font-weight: var(--e-global-typography-text-font-weight);
     padding: 2rem;
     position: relative;
     text-align: center;
 }
 
 .value-prop__headline {
-    font-family: 'Monserrat', 'Arial Black', sans-serif;
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 60px;
     font-weight: bold;
-    font-size: 4rem;
+    margin-bottom: 0;
 }
 
 .value-prop__headline em {
@@ -20,16 +24,22 @@
     font-style: normal;
 }
 
+.value-prop__instructions,
+.value-prop__response,
+.value-prop__footer {
+    max-width: 800px;
+}
+
 .value-prop__input-group {
     display: flex;
-    margin: 4rem 0 8rem;
+    margin: 40px 0;
     width: 100%;
     max-width: 66rem;
 }
 
 .value-prop__input {
     border: 1px solid #74afda;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 5px 0 0 5px;
     font-size: 1rem;
     flex-grow: 1;
     padding: 0.5rem;
@@ -38,12 +48,12 @@
 .value-prop__submit {
     background: #74afda;
     border: 0;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 5px 5px 0;
     color: #fff;
     cursor: pointer;
-    font-family: 'Monserrat', 'Arial Black', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
 }
@@ -68,21 +78,21 @@
 .value-prop__spinner__inner {
     display: block;
     position: relative;
-    width: 6rem;
-    height: 6rem;
+    width: 40px;
+    height: 40px;
 }
 
 .value-prop__spinner__inner div {
     animation: value-prop-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border: 0.7rem solid #fff;
+    border: 5px solid #fff;
     border-color: #fff transparent transparent transparent;
     border-radius: 50%;
     box-sizing: border-box;
     display: block;
-    margin: 0.7rem;
+    margin: 5px;
     position: absolute;
-    width: 6rem;
-    height: 6rem;
+    width: 40px;
+    height: 40px
 }
 
 .value-prop__spinner__inner div:nth-child(1) {
