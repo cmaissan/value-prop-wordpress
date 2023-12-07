@@ -19,6 +19,7 @@
             html += '<p>' + paragraphs[i] + '</p>'
         }
         errorEl.style.display = 'none';
+        containerEl.classList.toggle('has-response', true);
         responseEl.innerHTML = html;
     }
 

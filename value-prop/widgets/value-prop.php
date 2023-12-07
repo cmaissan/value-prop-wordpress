@@ -52,13 +52,15 @@ class Value_Prop_Widget extends \Elementor\Widget_Base {
 	protected function render() {
         ?>
             <div class="value-prop">
-                <h2 class="value-prop__headline">What's my <em>Value Proposition?</em></h2>
-                <p class="value-prop__instructions">
-                    Enter the address of any business' website to see how OpenAI interprets its Value Proposition to be.
-                </p>
-                <div class="value-prop__input-group">
-                    <input class="value-prop__input" placeholder="https://" autofocus>
-                    <button class="value-prop__submit">Submit</button>
+                <div class="value-prop__header">
+                    <h2 class="value-prop__headline">What's my <em>Value Proposition?</em></h2>
+                    <p class="value-prop__instructions">
+                        Enter the address of any business' website to see how OpenAI interprets its Value Proposition to be.
+                    </p>
+                    <div class="value-prop__input-group">
+                        <input class="value-prop__input" placeholder="https://" autofocus>
+                        <button class="value-prop__submit">Submit</button>
+                    </div>
                 </div>
                 <div class="value-prop__error"></div>
                 <div class="value-prop__response"></div>
