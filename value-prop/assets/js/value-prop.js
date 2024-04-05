@@ -38,7 +38,7 @@
      */
     submitEl.addEventListener('click', () => {
         containerEl.classList.toggle('loading', true);
-        fetch('https://whatsmyvalueprop.com', {
+        fetch('https://whatsmyvalueprop.com/vp', {
             method: 'POST',
             mode: 'cors',
             headers: {
